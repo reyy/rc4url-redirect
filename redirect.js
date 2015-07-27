@@ -13,7 +13,7 @@ document.location.search.replace(/\??(?:([^=]+)=([^&]*)&?)/g, function () {
 console.log($_GET);
 
 if (typeof $_GET['n'] === 'undefined' || $_GET['n'] == "") {
-	window.location.replace("https://l.rc4.sg/new");
+	window.location.replace("http://l.rc4.sg/new");
      
 } else {
 	$.ajax({
@@ -28,7 +28,7 @@ function loadDone(data) {
         console.log(data.table.rows[0].c[0].v);
         window.location.replace(data.table.rows[0].c[0].v)
     } else {
-        window.location.replace("https://l.rc4.sg/err");
+        window.location.replace("http://l.rc4.sg/err");
     }
     
 }
