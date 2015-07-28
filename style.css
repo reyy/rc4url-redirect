@@ -17,7 +17,14 @@ p {
 	font-size: 24;
 	text-align: left;
 }
-
+a{
+	color:#ffa500;
+}
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
 #bkg {
 	width: 100%;
     height: 100%;
@@ -33,11 +40,9 @@ p {
 }
 
 .contain {
-	min-height: 100%;
-  min-height: 100vh;
-
-  display: flex;
-  align-items: center;
+	position: relative;
+    top: 50%;
+    transform: translateY(-50%);
 }
 #logo {
 	width: 100%;
